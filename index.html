@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Crear cuenta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Playwrite+AR:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form id="signInForm">
+      <div class="campo">
+        <label for="notaMat" class="lblArriba">Nota de matemática</label>
+        <input type="number" id="notaMat" />
+        <label class="error "></label>
+        <label class="bien"></label>
+      </div>
+
+      <div class="campo">
+        <label for="notaLen" class="lblArriba">Nota de lengua</label>
+        <input type="number" id="notaLen" />
+        <label class="error"></label>
+        <label class="bien"></label>
+      </div>
+
+      <div class="campo">
+        <label for="notaEfsi" class="lblArriba">Nota de EFSI</label>
+        <input type="number" id="notaEfsi" />
+        <label class="error"></label>
+        <label class="bien"></label>
+      </div>
+
+      <div class="campo">
+        <button type="submit" id="buttPromedio"><b>Ver promedio</b></button>
+        <p id="buttPromedioResult"></p>
+        <p id="buttPromedioResultBien"></p>
+
+        <button type="submit" id="buttMayorNota"><b>Ver mayor nota</b></button>
+        <p id="buttMayorNotaResult"></p>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
